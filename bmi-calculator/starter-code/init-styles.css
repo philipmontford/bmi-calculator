@@ -1,21 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;600&display=swap');
-@import url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
-
-:root {
-  --primary: #253347;
-  --secondary: #5e6e85;
-  --border: #d8e2e7;
-  --white: #fff;
-  --radio: rgba(52, 95, 246, 0.15);
-  --blue: #345ff6; 
-} 
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
 }
+  
 
 img {
   max-width: 100%;
@@ -26,9 +15,8 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   font-family: "Inter", sans-serif;
-  background: var(--white);
-  display: flex;
-  flex-direction: column;
+  background: #4d7fca;
+}
 }
 
 /* General Styles */
@@ -38,80 +26,46 @@ h2,
 h3,
 h4,
 h5 {
-  color: var(--primary)
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  color: var(--color-primary)
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 110%;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 p {
   font-weight: 400;
-  color: var(--secondary);
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-secondary);
 }
 
 /* layout */
 
 .container {
   width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+  display: ;
 }
 
-.header {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin-bottom: 0;
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(290.1deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
-  border-radius: 0px 0px 35px 35px;
-  padding: 5% 10% 18%;
-  gap: 8rem;
-}
-
-.header-text {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-.header-text h1 {
-  width: 38rem;
-  font-size: 4.7rem;
-  line-height: 5.5rem;
-  margin-bottom: 0;
-}
-
-.header-text p {
-  width: 35rem;
-  font-size: 1.2rem;
-  text-align: justify;
-  line-height: 1.7rem;
-}
-
-.bmi-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  position: relative;
-}
-
-.bmi-card {
-  width: 35rem;
-  height: auto;
-  background-color: var(--white);
-  border: .8rem;
-  box-shadow: 0px 1px 0px var(--border);
-  position: absolute;
-  left: -25%;
-}
-
-/* header,
+header,
 .summary,
 .summary,
 .tips,
@@ -201,13 +155,13 @@ img {
 
 .race {
   grid-column: span 12;
-} */
+}
 
 /* Elements Specific Styles */
 
 /* Header Styles */
 
-/* .header-text {
+.header-text {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -216,17 +170,17 @@ img {
 .header-content h1, 
 .header-content p {
   max-width: 400px;
-} */
+}
 
 /* Custom radio styles */
 
 /* Hide the default radio */
-/* input[type="radio"] {
+input[type="radio"] {
   all: unset;
-} */
+}
 
 /* Styles the custom radio unchecked state */
-/* input[type="radio"] {
+input[type="radio"] {
   background-color: var(--color-white);
   margin: 0;
   font: inherit;
@@ -236,9 +190,9 @@ img {
   width: 31px;
   height: 31px;
   border: 1px solid var(--color-border);
-  border-radius: 50%; */
+  border-radius: 50%;
   /* this aligns custom radio with hidden native one */
-  /* display: grid;
+  display: grid;
   place-content: center;
 }
 
@@ -249,11 +203,11 @@ input [type="radio"]:checked {
 input[type="radio"]:hover {
   cursor: pointer;
   border-color: var(--color-blue);
-} */
+}
 
 
 /* Create a before element to be our custom radio when checked  */
-/* input[type="radio"]::before {
+input[type="radio"]::before {
   content: "";
   width: 15PX;
   height: 15px;
@@ -277,5 +231,5 @@ input [type="radio"]:checked::before {
   justify-content: flex-start;
   align-items: center;
   width: 50%;
-} */
+}
 
