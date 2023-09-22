@@ -105,12 +105,138 @@ p {
   width: 35rem;
   height: auto;
   background-color: var(--white);
-  border: .8rem;
-  box-shadow: 0px 1px 0px var(--border);
+  border-radius: 1rem;
+  box-shadow: 3px 1px 3px var(--border);
   position: absolute;
+  top: 25%;
   left: -25%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
+.bmi-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.units-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+.metric input,
+.imperial input {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: .1rem solid var(--border);
+  margin-right: 1rem;
+}
+
+.metric label,
+.imperial label {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  position: absolute;
+}
+
+.bmi-measurement {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+.height,
+.weight {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.height label,
+.weight label {
+  color: var(--secondary);
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+.height-input,
+.weight-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border);
+  height: 3.8rem;
+  border-radius: .6rem;
+  padding: 1rem;
+}
+
+.height-input input,
+.weight-input input {
+  width: 9.5rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--secondary);
+  opacity: 0.6;
+}
+
+.height-input p,
+.weight-input p {
+  color: var(--blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.results-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: var(--blue);
+  padding: 2rem;
+  border-radius: 0px 100px 100px 0px;
+}
+
+.results-card h4 {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.results-card p {
+  color: var(--white);
+  opacity: 0.9;
+}
+
+input [type="radio"]:checked {
+  background-color: var(--radio);
+}
+
+input[type="radio"]:hover {
+  cursor: pointer;
+  border-color: var(--blue);
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 15PX;
+  height: 15px;
+  border-radius: 50%;
+  transform: scale(0);
+  transform: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--blue);
+}
+
+input [type="radio"]:checked::before {
+  transform: scale(1);
+}
 /* header,
 .summary,
 .summary,
