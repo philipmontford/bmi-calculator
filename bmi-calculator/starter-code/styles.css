@@ -70,6 +70,7 @@ p {
   border-radius: 0px 0px 35px 35px;
   padding: 5% 10% 18%;
   gap: 8rem;
+  margin-left: 40px;
 }
 
 .header-text {
@@ -263,6 +264,35 @@ input [type="radio"]:checked::before {
   font-size: 1.3rem;
   line-height: 1.8rem;
   text-align: justify;
+}
+
+.tips {
+  width: 98%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+  padding: 5% 8%;
+  background: linear-gradient(290.1deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
+  border-radius: 0px 1.5rem 1.5rem 0px;
+}
+
+.tips-card,
+.tips-text  {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.tips-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.tips-text p {
+  width: 420px;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 /* header,
 .summary,
